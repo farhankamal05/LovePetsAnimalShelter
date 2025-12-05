@@ -1,102 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loved Pets Animal Shelter</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Loved Pets Animal Shelter - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <img src="logo.png" alt="Logo" class="nav-logo" />
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#adopt">Adopt</a>
-            <a href="#contact">Contact</a>
+    <header>
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="logo-container">
+                    <img src="img/LPASLogoExpanded.png" alt="Loved Pets Animal Shelter Logo" class="logo-img">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <nav class="nav-links">
+                    <a href="adopt.html">Adopt</a>
+                    <a href="volunteer.html">Volunteer</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </nav>
+            </div>
         </div>
-        <div class="nav-buttons">
-            <button>Donate</button>
-            <button>Volunteer</button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="container section">
+            <div class="hero"
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC53M0tRonkQ2fmtskEjwSmys3PRV2JuXicUV9BPoZiHNTIEP8YelMlcSoCIttWVr1X8g5iOpb5fQxhP0BMDktYsbQ6MowXvKaP5-hOjmoACIH2liieHCXqSMV3nc89jXlUd_cZVpNxInmj_XpQjxI4HBUlMy6pjd15W_aaY7hY8OtlAuIrr8O7DF8mhlgQYxFE48kF7pEk04OLUMEGofFxxXTmSnK28I4t2gimfg6xVVz9nVKd2EOyqtoEi7LeJzwvcIsncqqEc_4F")'>
+                <div class="flex flex-col gap-4 items-center max-w-2xl">
+                    <h1>Find a Friend, Save a Life.</h1>
+                    <p style="font-size: 1.25rem;">Welcome to Loved Pets Animal Shelter. Your new best friend is
+                        waiting.</p>
+                    <div class="flex gap-4" style="flex-wrap: wrap; justify-content: center;">
+                        <a href="adopt.html" class="btn btn-primary">Adopt a Pet</a>
+                        <a href="volunteer.html" class="btn btn-secondary">Join Our Volunteers</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="section" style="background-color: var(--background-light);">
+            <div class="container text-center" style="max-width: 800px;">
+                <h2>Our Mission</h2>
+                <p style="font-size: 1.125rem; color: var(--text-dark); opacity: 0.8;">
+                    At Loved Pets Animal Shelter, we are dedicated to providing a safe, loving, and supportive
+                    environment for animals in need. Our mission is to rescue, rehabilitate, and rehome pets while
+                    fostering a community of compassion and responsible pet ownership.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Pets Section -->
+        <section class="section" style="background-color: rgba(189, 224, 254, 0.2);">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3rem;">
+                    <h2>Featured Pets Ready for a Home</h2>
+                </div>
+                <div class="grid grid-3">
+                    <!-- Pet Card 1 -->
+                    <div class="card">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmOl3z6o0c78ZAUPzEb9XFBynTvFWl8tuuWFVAI0AKVw66R7ccgHg-dxmKoEqdkiO5tXs1nm29JVBs2zOv4pGYywXFm0-dxyJE7Q4PME3gj3zFgcawZ3zBTzWKCS7dHXksRXJPiNBx-bYB9kVlnfi7J6sgYD5lDgNdVndFMZ85Kd8typ8cQdmHT29a1R0tH2dkMPzmkPFBaO3BPSMrbSNiYGzyNjC9we_Rae5iPOAq1oOpa1MbCjKhW6ccid9fD_huHypINJIVPTwR"
+                            alt="Golden Retriever Mix" class="card-img">
+                        <div class="card-content">
+                            <h3>Buddy</h3>
+                            <p>Golden Retriever Mix</p>
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                    </div>
+                    <!-- Pet Card 2 -->
+                    <div class="card">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzA8-P_xQwCW0BCFbC4adhobPiiOZ-o9ESDHAyHN_8jlRhDG2EYKsekWjKvw7hs6pAqskcKhyzpL0OqnfEdxSRwdqSWNtha2CWIC0yYEmuukE2rE0i6jDeuFZIp1eYm58ouxYAYdzbiXOhsw9_NKr5J672az8Hh_JRR5K4Z-T_ksJF5BWWcJpPSua1P_qdpEwPSUoxkqByowzzsg2Ao5QSoUJHXzW9dsVAm_WF4Dz4_wgp2y8R9jdi0_bNjEC7GsJOaHr6jNhuFEab"
+                            alt="Tabby Cat" class="card-img">
+                        <div class="card-content">
+                            <h3>Luna</h3>
+                            <p>Domestic Shorthair</p>
+                            <span class="status-badge status-pending">Adoption Pending</span>
+                        </div>
+                    </div>
+                    <!-- Pet Card 3 -->
+                    <div class="card">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb2GpCbPvtgvkzyJ2OlI4gDZKj1jN-6EH_ayWEgyCqwJ-kDoKRjHmDND4yu7bijQP7SLlQ1-K2zzggk3vFrCcFUHbH3Owf1sulmR_MGfdIHnXCRyqyu_eo-vzLABUgdmQj6Kl4PXKnd4mseYb7zjsXW_ZmPSQpMed8ozp_OjMcJMlA30sWYc8ZMM87kB1eSplJei8mspS8HkjDw5dHj4yfVVHhTjkb2i1rTkUjhQ1pHDLsQQhtqrbBPaKThekXOarErofh1n1UsFra"
+                            alt="Dwarf Rabbit" class="card-img">
+                        <div class="card-content">
+                            <h3>Thumper</h3>
+                            <p>Dwarf Rabbit</p>
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="section container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h2>Happy Tails: Our Success Stories</h2>
+            </div>
+            <div class="flex items-center justify-center gap-8" style="flex-wrap: wrap;">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMwMF3Cjz5ypAS9GdfMKU2w82Sj3fQvZ_9cWJTl2Lrgu-qV3nitYsgeA8wqFXLsrDRROMw7I9m2Ht0EFSo9KRBiXRCfur1FIbRT3Cps9S2gekA5uc-x5fpij03AvooXgqsqxV06bEtTWJEn17D7pTbT3qpqDhj-T44jFB7lZxElY21Yq5Mfz6OP6mVa2Oa0EdGvWCF240K_Y6gle4lOGli-jeQ7tfnGbjP-ToRbHkZkSQzKAjoZUOjoDQJ2NMu5-z1UB3moyMkArDt"
+                    alt="Happy dog with owner"
+                    style="width: 320px; height: 320px; object-fit: cover; border-radius: 0.75rem; box-shadow: var(--shadow-lg);">
+                <div style="max-width: 450px; text-align: center;">
+                    <p style="font-size: 1.25rem; font-style: italic; margin-bottom: 1rem;">"Adopting Max was the best
+                        decision we've ever made. He brings so much joy and laughter into our home every single day.
+                        Thank you, Loved Pets, for bringing us together!"</p>
+                    <p style="font-weight: 700;">- The Johnson Family</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved -->
+        <section class="section" style="background-color: rgba(189, 224, 254, 0.2);">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3rem;">
+                    <h2>Get Involved</h2>
+                    <p style="max-width: 600px; margin: 0 auto; opacity: 0.8;">There are many ways you can help us make
+                        a difference in the lives of animals.</p>
+                </div>
+                <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+                    <!-- Volunteer Card -->
+                    <div class="card" style="text-align: center; padding: 2rem;">
+                        <div
+                            style="color: var(--primary-color); background-color: rgba(162, 210, 255, 0.2); width: fit-content; margin: 0 auto 1rem; padding: 1rem; border-radius: 50%;">
+                            <span class="material-symbols-outlined" style="font-size: 2.5rem;">volunteer_activism</span>
+                        </div>
+                        <h3>Become a Volunteer</h3>
+                        <p>Join our dedicated team and help with animal care, events, and daily operations. Your time
+                            and skills can change a life.</p>
+                        <a href="volunteer.html" class="btn btn-secondary" style="margin-top: 1rem;">Learn About
+                            Volunteering</a>
+                    </div>
+                    <!-- Foster Card (Replaced Donate) -->
+                    <div class="card" style="text-align: center; padding: 2rem;">
+                        <div
+                            style="color: var(--primary-color); background-color: rgba(162, 210, 255, 0.2); width: fit-content; margin: 0 auto 1rem; padding: 1rem; border-radius: 50%;">
+                            <span class="material-symbols-outlined" style="font-size: 2.5rem;">home</span>
+                        </div>
+                        <h3>Become a Foster</h3>
+                        <p>Fostering a pet helps them prepare for a forever home and frees up space in the shelter for
+                            more animals in need.</p>
+                        <a href="contact.html" class="btn btn-secondary" style="margin-top: 1rem;">Contact to Foster</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Loved Pets Animal Shelter</h4>
+                <p style="color: #9ca3af; font-size: 0.875rem;">123 Puppy Lane, Petville, USA</p>
+                <p style="color: #9ca3af; font-size: 0.875rem;">contact@lovedpets.org</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="color: #9ca3af; font-size: 0.875rem; margin-top: 1rem;">
+                    <li><a href="adopt.html">Adopt</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="flex gap-4" style="margin-top: 1rem;">
+                    <a href="#" style="color: #9ca3af;"><span class="material-symbols-outlined">public</span></a>
+                    <a href="#" style="color: #9ca3af;"><span class="material-symbols-outlined">photo_camera</span></a>
+                    <a href="#" style="color: #9ca3af;"><span
+                            class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
         </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="two-col-section">
-        <div class="text-col">
-            <h2 class="section-header">Helping Pets Find Homes</h2>
-            <p class="section-text">We connect loving families with pets who need forever homes.</p>
-            <button class="primary-btn">Adopt Today</button>
-        </div>
-        <div class="img-box"></div>
-    </section>
-
-    <!-- BRANDS / COMPANIES GALLERY -->
-    <section class="center" style="padding: 60px;">
-        <div class="img-box" style="height:180px; border-radius:40px;"></div>
-    </section>
-
-    <!-- TIMELINE SECTION -->
-    <section class="center" id="timeline">
-        <h2 class="section-header">Our Journey</h2>
-        <div class="img-box" style="height:220px; border-radius:40px;"></div>
-    </section>
-
-    <!-- STATS SECTION -->
-    <section id="stats">
-        <h2 class="section-header center">By The Numbers</h2>
-        <div class="stats-container">
-            <div class="stat-box">250+ Adoptions</div>
-            <div class="stat-box">50 Volunteers</div>
-            <div class="stat-box">10 Years Serving</div>
-        </div>
-    </section>
-
-    <!-- LEFT IMAGE / RIGHT TEXT -->
-    <section class="two-col-section">
-        <div class="img-box"></div>
-        <div class="text-col">
-            <h2 class="section-header">Caring for Animals</h2>
-            <p class="section-text">Our shelter provides medical care, nutrition, and love to pets in need.</p>
-            <button class="primary-btn">Learn More</button>
-        </div>
-    </section>
-
-    <!-- RIGHT IMAGE / LEFT TEXT -->
-    <section class="two-col-section reverse">
-        <div class="img-box"></div>
-        <div class="text-col">
-            <h2 class="section-header">Adoption Process</h2>
-            <p class="section-text">We make it easy to find the perfect match for your home and lifestyle.</p>
-            <button class="primary-btn">Start Adoption</button>
-        </div>
-    </section>
-
-    <!-- LARGE GALLERY -->
-    <section class="center">
-        <h2 class="section-header">Meet Our Pets</h2>
-        <div class="img-box" style="height:300px;"></div>
-    </section>
-
-    <!-- FINAL CTA SECTION -->
-    <section class="center" style="padding:60px;">
-        <div class="img-box" style="height:160px; width:60%; margin:auto;"></div>
-        <h2 class="section-header">Ready to Make a Difference?</h2>
-        <p class="section-text">Join our mission to give every pet the love they deserve.</p>
-        <button class="primary-btn">Get Involved</button>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <img src="logo.png" alt="Footer Logo" class="footer-logo" />
-        <h3>Footer</h3>
-        <div class="footer-buttons">
-            <button>Home</button>
-            <button>Adopt</button>
-            <button>Donate</button>
-            <button>Contact</button>
+        <div class="container text-center"
+            style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #374151; color: #6b7280; font-size: 0.875rem;">
+            <p>© 2024 Loved Pets Animal Shelter. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
